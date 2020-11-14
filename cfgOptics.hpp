@@ -1,0 +1,1 @@
+../artamidae-mod/artamidae-mod/APM_Weapons/cfgOptics.hpp
