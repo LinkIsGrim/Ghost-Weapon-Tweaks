@@ -82,9 +82,6 @@ class asdg_PistolUnderRail: asdg_SlotInfo
 {
 	class compatibleItems
 	{
-		rh_m6x = 1;
-		rh_x2 = 1;
-		rh_x300 = 1;
 	};
 };
 class asdg_MuzzleSlot;
