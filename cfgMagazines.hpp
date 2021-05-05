@@ -10,6 +10,10 @@ class cfgMagazines
   {
     scope = 1;
   };
+  class rhs_mag_an_m14_th3: HandGrenade
+  {
+    displayNameShort = "AN-M14 TH3";
+  };
   class CA_Magazine;
   class 10Rnd_338_Mag: CA_Magazine //338/300 Win Mag Magazines
   {
@@ -1173,7 +1177,7 @@ class cfgMagazines
   };
   class rhs_mag_30Rnd_762x51_m62_fnfal: rhs_mag_30Rnd_762x51_m80_fnfal
   {
-    ammo = "HLC_762x51_Tracer"
+    ammo = "HLC_762x51_Tracer";
     displayName = "7.62x51mm 30rnd FN FAL Mag (M62 Tracer)";
   };
   class hlc_20Rnd_762x51_B_fal;

@@ -10,6 +10,7 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Data_F_Oldman_Loadorder",
+			"rhsusf_main_loadorder",
 			"ace_compat_rhs_usf3",
 			"ace_compat_rhs_gref3",
 			"ace_ballistics",
@@ -27,22 +28,21 @@ class CfgPatches
 //Rails for Standard Modset
 #include "cfgJointRails.hpp"
 
-
 //Recoil Tweaks
 #include "cfgRecoils.hpp"
-
 
 //APM Magazines for Standard Modset
 #include "cfgMagazines.hpp"
 
-
 //Magwell Tweaks for Standard Modset
 #include "cfgMagazineWells.hpp"
-
 
 //Soundset, soundshader definitions for suppresed Negev NG7
 #include "cfgSoundShaders.hpp"
 #include "cfgSoundSets.hpp"
+
+//Field Manual Stuff
+#include "cfgHints.hpp"
 
 class cfgAmmo
 {
@@ -236,8 +236,13 @@ class cfgAmmo
 	};
 	class rhs_ammo_an_m14_th3: SmokeShell
 	{
-		deflecting=2;
-		deflectionSlowDown=0.3;
+		deflecting=1;
+		deflectionSlowDown=0.2;
+		explosive = 0.01;
+	};
+	class ACE_G_M14: SmokeShell
+	{
+		explosive = 0.01;
 	};
 };
 
@@ -341,7 +346,6 @@ class cfgWeapons
 			};
 		};
 	};
-	class Pistol_Base_F;
 	class ACE_Flashlight_Maglite_ML300L: Pistol_Base_F
 	{
 		class FlashLight

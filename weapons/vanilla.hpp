@@ -102,6 +102,7 @@ class arifle_MX_GL_khk_F: arifle_MX_GL_Black_F
 };
 class LMG_Mk200_F: Rifle_Long_Base_F
 {
+  rhsusf_acc_anpeq15 = 2;
   recoil = "recoil_LIM";
   ACE_barrelLength = 381;
   ACE_barrelTwist = 178;
@@ -260,6 +261,7 @@ class LMG_03_Vehicle_F: LMG_03_F
 };
 class arifle_AK12_base_F: Rifle_Base_F
 {
+	rhsusf_acc_anpeq15 = 2;
   class WeaponSlotsInfo: WeaponSlotsInfo
   {
     mass = 82;
@@ -651,6 +653,7 @@ class arifle_SPAR_03_base_F: Rifle_Base_F
 };
 class arifle_MSBS65_base_F: Rifle_Base_F
 {
+  rhsusf_acc_anpeq15 = 2;
   class Single: Mode_SemiAuto
   {
     dispersion = "((1.7) * 0.00029088)";
@@ -793,7 +796,7 @@ class hgun_ACPC2_F: Pistol_Base_F
   class WeaponSlotsInfo;
   hiddenSelectionsTextures[]=
   {
-    "APM_Weapons\data\ACP_BLK.paa"
+    "x\APM\Addons\Weapons\Data\ACP_BLK.paa"
   };
   class Single: Mode_SemiAuto
   {

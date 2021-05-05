@@ -52,7 +52,7 @@ class hlc_rifle_awmagnum338: hlc_rifle_awmagnum
 	baseWeapon = "hlc_rifle_awmagnum338";
 	magazines[] = {"APM_5Rnd_338LM_FMJ"};
 	magazineWell[] = {"CBA_338LM_AI"};
-	hiddenSelectionsTextures[] = {"\hlc_wp_fhAWC\tex\awcstock_OD_co.paa","\hlc_wp_fhAWC\tex\AWC_Scope_co.paa","\APM_Weapons\Data\Magnumbits_ca.paa"};
+	hiddenSelectionsTextures[] = {"\hlc_wp_fhAWC\tex\awcstock_OD_co.paa","\hlc_wp_fhAWC\tex\AWC_Scope_co.paa","x\APM\Addons\Weapons\Data\Magnumbits_ca.paa"};
 	displayName = "AI AWM .338LM (OD)";
 };
 class hlc_rifle_awMagnum338_BL: hlc_rifle_awMagnum_BL
@@ -60,7 +60,7 @@ class hlc_rifle_awMagnum338_BL: hlc_rifle_awMagnum_BL
 	baseWeapon = "hlc_rifle_awmagnum338_BL";
 	magazines[] = {"APM_5Rnd_338LM_FMJ"};
 	magazineWell[] = {"CBA_338LM_AI"};
-	hiddenSelectionsTextures[] = {"\hlc_wp_fhAWC\tex\AWCSTOCK_black_co.paa","\hlc_wp_fhAWC\tex\AWC_Scope_co.paa","\APM_Weapons\Data\Magnumbits_ca.paa"};
+	hiddenSelectionsTextures[] = {"\hlc_wp_fhAWC\tex\AWCSTOCK_black_co.paa","\hlc_wp_fhAWC\tex\AWC_Scope_co.paa","x\APM\Addons\Weapons\Data\Magnumbits_ca.paa"};
 	displayName = "AI AWM .338LM (Black)";
 };
 class hlc_rifle_awMagnum338_FDE: hlc_rifle_awMagnum_FDE
@@ -68,6 +68,6 @@ class hlc_rifle_awMagnum338_FDE: hlc_rifle_awMagnum_FDE
 	baseWeapon = "hlc_rifle_awmagnum338_FDE";
 	magazines[] = {"APM_5Rnd_338LM_FMJ"};
 	magazineWell[] = {"CBA_338LM_AI"};
-	hiddenSelectionsTextures[] = {"\hlc_wp_fhAWC\tex\awcstock_FDE_co.paa","\hlc_wp_fhAWC\tex\AWC_Scope_co.paa","\APM_Weapons\Data\Magnumbits_ca.paa"};
+	hiddenSelectionsTextures[] = {"\hlc_wp_fhAWC\tex\awcstock_FDE_co.paa","\hlc_wp_fhAWC\tex\AWC_Scope_co.paa","x\APM\Addons\Weapons\Data\Magnumbits_ca.paa"};
 	displayName = "AI AWM .338LM (FDE)";
 };

@@ -52,6 +52,13 @@ class asdg_FrontSideRail: asdg_SlotInfo
 		rhsusf_acc_anpeq15_bk_top_red = 1;
 		rhsusf_acc_anpeq15_wmx_laser = 1;
 		rhsusf_acc_anpeq16a_green = 1;
+		rhsusf_acc_anpeq16a_top_green = 1;
+		rhsusf_acc_anpeq15_bk_laser_sc = 1;
+		rhsusf_acc_anpeq15_laser_sc = 1;
+		rhsusf_acc_anpeq15_bk_top_red_sc = 1;
+		rhsusf_acc_anpeq15_top_red_sc = 1;
+		rhsusf_acc_anpeq15_wmx_laser_sc = 1;
+		rhsusf_acc_anpeq16a_top_green_sc = 1;
 	};
 };
 class rhs_western_rifle_laser_slot_top: asdg_FrontSideRail //for weapons with clear top quad rail.
@@ -67,6 +74,7 @@ class rhs_western_rifle_laser_slot: rhs_western_rifle_laser_slot_top //for weapo
 		rhsusf_acc_anpeq15_top_red = 0;
 		rhsusf_acc_anpeq15_bk_top_red = 0;
 		rhsusf_acc_anpeq15_wmx_laser = 0;
+		rhsusf_acc_anpeq16a_top_green = 0;
 	};
 };
 class rhs_russian_ris_side_slot: rhs_western_rifle_laser_slot

@@ -350,11 +350,44 @@ class rhsusf_acc_anpeq16a_green: rhsusf_acc_anpeq15_laser
   MRT_SwitchItemNextClass="rhsusf_acc_anpeq16a_light";
   MRT_SwitchItemPrevClass="rhsusf_acc_anpeq16a";
   rhs_anpeq15_base = "rhsusf_acc_anpeq16a_green";
-  displayName = "AN/PEQ-16A";
   picture = "\rhsusf\addons\rhsusf_inventoryicons\data\accessories\rhsusf_acc_anpeq16a_ca.paa";
   dlc = "RHS_USAF";
   author = "Red Hammer Studios";
   model = "\rhsusf\addons\rhsusf_weapons\acc\lasers\ANPEQ16\peq16a";
+};
+class rhsusf_acc_anpeq16a_top: rhsusf_acc_anpeq16a
+{
+  displayName = "AN/PEQ-16A (Top)";
+  model = "\rhsusf\addons\rhsusf_weapons\acc\lasers\ANPEQ16\peq16a_top";
+  rhs_anpeq15_base = "rhsusf_acc_anpeq16a_top";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq16a_top_green";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq16a_light_top";
+  MRT_switchItemHintText = "IR Laser";
+  rhs_acc_combo = "";
+  rhs_acc_combo_text = "";
+};
+class rhsusf_acc_anpeq16a_light_top: rhsusf_acc_anpeq16a_light
+{
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq16a_top";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq16a_top_green";
+  MRT_switchItemHintText = "Flashlight";
+  rhs_acc_combo = "";
+  rhs_acc_combo_text = "";
+  rhs_anpeq15_base = "rhsusf_acc_anpeq16a_light_top";
+  displayName = "AN/PEQ-16A (Top)";
+};
+class rhsusf_acc_anpeq16a_top_green: rhsusf_acc_anpeq16a_green
+{
+  ACE_laserpointer = 2;
+  displayName = "AN/PEQ-16A (Top)";
+  model = "\rhsusf\addons\rhsusf_weapons\acc\lasers\ANPEQ16\peq16a_top";
+  picture = "\rhsusf\addons\rhsusf_inventoryicons\data\accessories\rhsusf_acc_anpeq16a_ca.paa";
+  rhs_acc_combo = "";
+  rhs_acc_combo_text = "";
+  rhs_anpeq15_base = "rhsusf_acc_anpeq16a_top_green";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq16a_light_top";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq16a_top";
+  MRT_switchItemHintText = "Laser";
 };
 class rhs_acc_2dpZenit: acc_flashlight
 {
@@ -388,4 +421,130 @@ class rhs_acc_2dpZenit: acc_flashlight
       };
     };
   };
+};
+class rhsusf_acc_anpeq15_bk_sc: rhsusf_acc_anpeq15_bk
+{
+  rhs_acc_combo = "";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_bk_laser_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_bk_light_sc";
+};
+class rhsusf_acc_anpeq15_bk_light_sc: rhsusf_acc_anpeq15_bk_light
+{
+  rhs_acc_combo = "";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_bk_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_bk_laser_sc";
+};
+class rhsusf_acc_anpeq15_bk_laser_sc: rhsusf_acc_anpeq15_bk_laser
+{
+  scope = 1;
+  scopeArsenal = 0;
+  rhs_acc_combo = "";
+  author = "Red Hammer Studios";
+  model = "\rhsusf\addons\rhsusf_weapons\acc\lasers\ANPEQ15\PEQ15_A3_BK_top_sc";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_bk_light_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_bk_sc";
+};
+class rhsusf_acc_anpeq15_sc: rhsusf_acc_anpeq15
+{
+  rhs_acc_combo = "";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_laser_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_light_sc";
+};
+class rhsusf_acc_anpeq15_light_sc: rhsusf_acc_anpeq15_light
+{
+  rhs_acc_combo = "";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_laser_sc";
+};
+class rhsusf_acc_anpeq15_laser_sc: rhsusf_acc_anpeq15_laser
+{
+  scope = 1;
+  scopeArsenal = 0;
+  rhs_acc_combo = "";
+  author = "Red Hammer Studios";
+  model = "\rhsusf\addons\rhsusf_weapons\acc\lasers\ANPEQ15\PEQ15_A3_top_sc";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_light_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_sc";
+};
+class rhsusf_acc_anpeq15_wmx_sc: rhsusf_acc_anpeq15_wmx
+{
+  rhs_acc_combo = "";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_wmx_laser_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_wmx_light_sc";
+};
+class rhsusf_acc_anpeq15_wmx_light_sc: rhsusf_acc_anpeq15_wmx_light
+{
+  rhs_acc_combo = "";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_wmx_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_wmx_laser_sc";
+};
+class rhsusf_acc_anpeq15_wmx_laser_sc: rhsusf_acc_anpeq15_wmx_laser
+{
+  scope = 1;
+  scopeArsenal = 0;
+  rhs_acc_combo = "";
+  author = "Red Hammer Studios";
+  model = "\rhsusf\addons\rhsusf_weapons\acc\flashlight\WMX\WMX_A3_side_sc";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_wmx_light_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_wmx_sc";
+};
+class rhsusf_acc_anpeq15_top_sc: rhsusf_acc_anpeq15_top
+{
+  rhs_acc_combo = "";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_top_red_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_top_red_sc";
+};
+class rhsusf_acc_anpeq15_top_red_sc: rhsusf_acc_anpeq15_top_red
+{
+  scope = 1;
+  scopeArsenal = 0;
+  rhs_acc_combo = "";
+  author = "Red Hammer Studios";
+  model = "\rhsusf\addons\rhsusf_weapons\acc\lasers\ANPEQ15\PEQ15_A3_top_single_sc";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_top_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_top_sc";
+};
+class rhsusf_acc_anpeq15_bk_top_sc: rhsusf_acc_anpeq15_bk_top
+{
+  rhs_acc_combo = "";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_bk_top_red_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_bk_top_red_sc";
+};
+class rhsusf_acc_anpeq15_bk_top_red_sc: rhsusf_acc_anpeq15_bk_top_red
+{
+  scope = 1;
+  scopeArsenal = 0;
+  rhs_acc_combo = "";
+  author = "Red Hammer Studios";
+  model = "\rhsusf\addons\rhsusf_weapons\acc\lasers\ANPEQ15\PEQ15_A3_BK_top_single_sc";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq15_bk_top_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq15_bk_top_sc";
+};
+class rhsusf_acc_anpeq16a_top_sc: rhsusf_acc_anpeq16a_top
+{
+  scope = 1;
+  scopeArsenal = 0;
+  rhs_acc_combo = "";
+  author = "Red Hammer Studios";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq16a_top_green_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq16a_light_top_sc";
+};
+class rhsusf_acc_anpeq16a_light_top_sc: rhsusf_acc_anpeq16a_light_top
+{
+  scope = 1;
+  scopeArsenal = 0;
+  rhs_acc_combo = "";
+  author = "Red Hammer Studios";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq16a_top_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq16a_top_green_sc";
+};
+class rhsusf_acc_anpeq16a_top_green_sc: rhsusf_acc_anpeq16a_top_green
+{
+  scope = 1;
+  scopeArsenal = 0;
+  rhs_acc_combo = "";
+  author = "Red Hammer Studios";
+  model = "\rhsusf\addons\rhsusf_weapons\acc\lasers\ANPEQ16\peq16a_top_sc";
+  MRT_SwitchItemNextClass="rhsusf_acc_anpeq16a_light_top_sc";
+  MRT_SwitchItemPrevClass="rhsusf_acc_anpeq16a_top_sc";
 };

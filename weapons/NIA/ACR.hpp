@@ -2,6 +2,11 @@
 //Black MBUS's
 //Potentially fix grip2 animation?
 //Remove Squantoon/Aron variants.
+//High RHS ANPEQ15
+class hlc_acr_base: Rifle_Base_F
+{
+	rhsusf_acc_anpeq15 = 2;
+};
 class hlc_acr556_base;
 class hlc_rifle_ACR_SBR_tan: hlc_acr556_base
 {
@@ -303,7 +308,6 @@ class hlc_rifle_ACR_GL_mid_tan: hlc_rifle_ACR_GL_mid_black
   displayName = "ACR-E UGL (5.56mm/16.5/Tan)";
   hiddenSelectionsTextures[] = {"hlc_wp_ACR\tex\map1_co.paa","hlc_wp_ACR\tex\map2-556black_co.paa","hlc_wp_ACR\tex\map3_co.paa","hlc_wp_ACR\tex\mapyes_co.paa","hlc_wp_ACR\tex\pmag_co.paa","hlc_wp_ACR\tex\afg2_co.paa"};
 };
-class hlc_acr_base;
 class hlc_rifle_ACR68_SBR_tan: hlc_acr_base
 {
 	displayName = "ACR-E (6.8mm/10.5/Tan)";

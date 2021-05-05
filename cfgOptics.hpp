@@ -92,9 +92,25 @@ class optic_mrco: ItemCore
     };
   };
 };
+class ace_optic_mrco_2d: optic_mrco
+{
+  class ItemInfo: ItemInfo
+  {
+    class OpticsModes: OpticsModes
+    {
+      class MRCOscope: MRCOscope
+      {
+        opticsZoomInit = 0.0625;
+        opticsZoomMax = 0.0625;
+        opticsZoomMin = 0.0625;
+        visionMode[] = {};
+      };
+    };
+  };
+};
 class optic_arco: ItemCore
 {
-  displayName = "ELCAN SpecterOS 4x (Tan/3D)"
+  displayName = "ELCAN SpecterOS 4x (Tan/3D)";
   class ItemInfo: InventoryOpticsItem_Base_F
   {
     class OpticsModes
@@ -110,7 +126,7 @@ class optic_arco: ItemCore
 };
 class ace_optic_arco_2d: optic_arco
 {
-  displayName = "ELCAN SpecterOS 4x (Tan/2D)"
+  displayName = "ELCAN SpecterOS 4x (Tan/2D)";
   class ItemInfo: ItemInfo
   {
     class OpticsModes: OpticsModes
@@ -127,7 +143,7 @@ class ace_optic_arco_2d: optic_arco
 };
 class ace_optic_arco_pip: ace_optic_arco_2d
 {
-  displayName = "ELCAN SpecterOS 4x (Tan/PIP)"
+  displayName = "ELCAN SpecterOS 4x (Tan/PIP)";
   scope = 1;
   class ItemInfo: ItemInfo
   {
@@ -144,45 +160,45 @@ class ace_optic_arco_pip: ace_optic_arco_2d
 };
 class optic_arco_blk_f: optic_arco
 {
-  displayName = "ELCAN SpecterOS 4x (Black/3D)"
+  displayName = "ELCAN SpecterOS 4x (Black/3D)";
 };
 class ace_optic_arco_blk_2d: ace_optic_arco_2d
 {
   ace_optics_BodyDay = "\APM_Weapons\Data\Elcan.paa";
   ace_optics_BodyNight = "\APM_Weapons\Data\Elcan.paa";
-  displayName = "ELCAN SpecterOS 4x (Black/2D)"
+  displayName = "ELCAN SpecterOS 4x (Black/2D)";
   model = "\A3\Weapons_F\Acc\acco_arco_blk_F.p3d";
   picture = "\a3\Weapons_F_Exp\Acc\Data\UI\icon_optic_Arco_blk_F_ca.paa";
 };
 class optic_arco_ghex_f: optic_arco
 {
-  displayName = "ELCAN SpecterOS 4x (G-Hex/3D)"
+  displayName = "ELCAN SpecterOS 4x (G-Hex/3D)";
 };
 class ace_optic_arco_ghex_2d: ace_optic_arco_2d
 {
   ace_optics_BodyDay = "\z\ace\addons\optics\reticles\arco-bodyNight_ca.paa";
-  displayName = "ELCAN SpecterOS 4x (G-Hex/2D)"
+  displayName = "ELCAN SpecterOS 4x (G-Hex/2D)";
   model = "\A3\Weapons_F\Acc\acco_arco_ghex_F.p3d";
   picture = "\a3\Weapons_F_Exp\Acc\Data\UI\icon_optic_Arco_ghex_F_ca.paa";
 };
 class optic_arco_arid_f: optic_arco
 {
-  displayName = "ELCAN SpecterOS 4x (Arid/3D)"
+  displayName = "ELCAN SpecterOS 4x (Arid/3D)";
 };
 class ace_optic_arco_arid_2d: ace_optic_arco_2d
 {
-  displayName = "ELCAN SpecterOS 4x (Arid/2D)"
+  displayName = "ELCAN SpecterOS 4x (Arid/2D)";
   model = "\A3\Weapons_F\Acc\acco_arco_arid_F.p3d";
   picture = "\a3\Weapons_F_Enoch\Acc\Data\UI\icon_optic_Arco_arid_F_ca.paa";
 };
 class optic_arco_lush_f: optic_arco
 {
-  displayName = "ELCAN SpecterOS 4x (Lush/3D)"
+  displayName = "ELCAN SpecterOS 4x (Lush/3D)";
 };
 class ace_optic_arco_lush_2d: ace_optic_arco_2d
 {
   ace_optics_BodyDay = "\z\ace\addons\optics\reticles\arco-bodyNight_ca.paa";
-  displayName = "ELCAN SpecterOS 4x (Lush/2D)"
+  displayName = "ELCAN SpecterOS 4x (Lush/2D)";
   model = "\A3\Weapons_F\Acc\acco_arco_lush_F.p3d";
   picture = "\a3\Weapons_F_Enoch\Acc\Data\UI\icon_optic_Arco_lush_F_ca.paa";
 };
@@ -427,7 +443,18 @@ class rhsusf_acc_acog: rhsusf_acc_sniper_base
 {
   class ItemInfo: ItemInfo
   {
-    class OpticsModes;
+    class OpticsModes
+    {
+      class elcan_scope
+      {
+        discreteDistance[] = {300};
+        distanceZoomMin = 300;
+        opticsPPEffects[] = {"OpticsCHAbera5","OpticsBlur5"};
+        opticsZoomMin = 0.0625;
+        opticsZoomMax = 0.0625;
+        opticsZoomInit = 0.0625;
+      };
+    };
   };
 };
 class rhsusf_acc_acog_3d: rhsusf_acc_acog
@@ -436,23 +463,11 @@ class rhsusf_acc_acog_3d: rhsusf_acc_acog
   {
     class OpticsModes: OpticsModes
     {
-      class elcan_scope
+      class elcan_scope: elcan_scope
       {
-        useModelOptics = 0;
         opticsZoomMin = 0.0625;
         opticsZoomMax = 0.125;
         opticsZoomInit = 0.75;
-        memoryPointCamera = "opticview_3d";
-        opticsID = 2;
-        opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1","rhs_m150_Blur"};
-        discreteDistance[] = {100};
-        discreteDistanceInitIndex = 0;
-        visionMode[] = {};
-        opticsFlare = 1;
-        opticsDisablePeripherialVision = 0;
-        distanceZoomMin = 100;
-        distanceZoomMax = 1000;
-        cameraDir = "";
       };
     };
   };
